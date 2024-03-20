@@ -9,55 +9,18 @@ conflict_prefer("lag", "dplyr")
 
 #Collecting the data
 
-m1_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202301-divvy-tripdata.csv")
-m2_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202302-divvy-tripdata.csv")
-m3_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202303-divvy-tripdata.csv")
-m4_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202304-divvy-tripdata.csv")
-m5_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202305-divvy-tripdata.csv")
-m6_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202306-divvy-tripdata.csv")
-m7_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202307-divvy-tripdata.csv")
-m8_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202308-divvy-tripdata.csv")
-m9_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202309-divvy-tripdata.csv")
-m10_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202310-divvy-tripdata.csv")
-m11_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202311-divvy-tripdata.csv")
-m12_2023 <- read.csv("C:\\Users\\AKIAPPY\\Downloads\\csv files\\202312-divvy-tripdata.csv")
-
-#Checking all the date formats as date and ride_length were NA for multiple rows
-head(m1_2023) # 21-01-2023 20:05 21-01-2023 20:16
-tail(m1_2023) # 17-01-2023 18:36 17-01-2023 19:00 
-
-head(m2_2023) # 2023-02-14 11:59:42 2023-02-14 12:13:38
-tail(m2_2023) # 2023-02-04 17:52:34 2023-02-04 17:59:57
-
-head(m3_2023) # 2023-03-16 08:20:34 2023-03-16 08:22:52 
-tail(m3_2023) # 2023-03-08 20:06:52 2023-03-08 20:13:31
-
-head(m4_2023) # 2023-04-02 08:37:28 2023-04-02 08:41:37
-tail(m4_2023) # 2023-04-02 08:37:28 2023-04-02 08:41:37 
-
-head(m5_2023) # 2023-05-07 19:53:48 2023-05-07 19:58:32
-tail(m5_2023) # 2023-05-01 22:25:50 2023-05-01 22:40:53
-
-head(m6_2023) # 2023-06-05 13:34:12 2023-06-05 14:31:56
-tail(m6_2023) # 2023-06-23 06:36:30 2023-06-23 07:01:59
-
-head(m7_2023) # 2023-08-19 15:41:53 2023-08-19 15:53:36
-tail(m7_2023) # 2023-08-20 12:37:39 2023-08-20 12:50:14
-
-head(m8_2023) # 2023-08-19 15:41:53 2023-08-19 15:53:36
-tail(m8_2023) # 2023-08-20 12:37:39 2023-08-20 12:50:14
-
-head(m9_2023) # 2023-09-23 00:27:50 2023-09-23 00:33:27
-tail(m9_2023) # 2023-09-18 18:45:38 2023-09-18 19:11:33
-
-head(m10_2023) # 2023-10-08 10:36:26 2023-10-08 10:49:19
-tail(m10_2023) # 2023-10-11 17:10:52 2023-10-11 17:36:33
-
-head(m11_2023) # 2023-11-30 21:50:05 2023-11-30 22:13:27
-tail(m11_2023) # 2023-11-03 17:04:45 2023-11-03 17:07:50
-
-head(m12_2023) # 2023-12-02 18:44:01 2023-12-02 18:47:51
-tail(m12_2023) # 2023-12-04 23:34:11 2023-12-04 23:39:16
+m1_2023 <- read.csv("C:\\csv files\\202301-divvy-tripdata.csv")
+m2_2023 <- read.csv("C:\\csv files\\202302-divvy-tripdata.csv")
+m3_2023 <- read.csv("C:\\csv files\\202303-divvy-tripdata.csv")
+m4_2023 <- read.csv("C:\\csv files\\202304-divvy-tripdata.csv")
+m5_2023 <- read.csv("C:\\csv files\\202305-divvy-tripdata.csv")
+m6_2023 <- read.csv("C:\\csv files\\202306-divvy-tripdata.csv")
+m7_2023 <- read.csv("C:\\csv files\\202307-divvy-tripdata.csv")
+m8_2023 <- read.csv("C:\\csv files\\202308-divvy-tripdata.csv")
+m9_2023 <- read.csv("C:\\csv files\\202309-divvy-tripdata.csv")
+m10_2023 <- read.csv("C:\\csv files\\202310-divvy-tripdata.csv")
+m11_2023 <- read.csv("C:\\csv files\\202311-divvy-tripdata.csv")
+m12_2023 <- read.csv("C:\\csv files\\202312-divvy-tripdata.csv")
 
 
 #The date format of m1_2023 seems to be the only one with %d-%m-%Y %H:%M so standardizing it
